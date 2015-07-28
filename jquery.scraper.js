@@ -7,10 +7,13 @@
       options = $.extend(defaults, options || {});
       var href = element.attr('href');
       $.ajax({
-        url: "http://scraper.luccasmaso.com/api/v1/oembed?url=" + encodeURIComponent(href) + "&width=" + options.width + "&autoplay=1"
+        url: "https://scraper.luccasmaso.com/api/v1/oembed?url=" + encodeURIComponent(href) + "&width=" + options.width + "&autoplay=1"
       }).done(function(response){
         if(response.type == "rich" || response.type == "video"){
           element.replaceWith(response.html);
+          if(options.done){
+            options.done.call();
+          }
         }
       });
     });
