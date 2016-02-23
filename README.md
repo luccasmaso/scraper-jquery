@@ -15,11 +15,11 @@ Check out this video:
 2. Add to your js file the call that will replace <a>`s with iframe elements:
 
 ```
-$("a.scraper-jquery").scraper(
+$("a.scraper-jquery").scraper({
   // Optional
-  width: 400 // Define some value for the preview. If unset it will get the `element.parent().width`
+  width: 400, // Define some value for the preview. If unset it will get the `element.parent().width`
   done: function(){
     // e.g. Hide some loading UI for feedback.
   }
-);
+});
 ```
