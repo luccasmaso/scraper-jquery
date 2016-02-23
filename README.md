@@ -9,7 +9,7 @@ For now, it is pretty simple and limited to:
 
 ```
 Check out this video: 
-<a class="scraper-jquery" src="https://www.youtube.com/watch?v=gbg27oT8Z9M">https://www.youtube.com/watch?v=gbg27oT8Z9M</a>
+<a class="scraper-jquery" href="https://www.youtube.com/watch?v=gbg27oT8Z9M">https://www.youtube.com/watch?v=gbg27oT8Z9M</a>
 ```
 
 2. Add to your js file the call that will replace <a>`s with iframe elements:
